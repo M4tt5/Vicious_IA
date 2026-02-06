@@ -1,0 +1,36 @@
+# === Android Studio ===
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# === Gradle ===
+.gradle/
+build/
+*/build/
+
+# === Local configuration ===
+local.properties
+
+# === Logs ===
+*.log
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === Android ===
+captures/
+.externalNativeBuild/
+.cxx/
+
+# === Keystore ===
+*.jks
+*.keystore
+
+# === NDK ===
+obj/
+
+# === Kotlin ===
+.kotlin/
+
