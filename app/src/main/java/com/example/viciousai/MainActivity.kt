@@ -38,6 +38,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageButton>(R.id.helpButton).setOnClickListener {
             showHelpDialog()
         }
+
+        findViewById<com.google.android.material.button.MaterialButton>(R.id.disconnectButton).setOnClickListener {
+            disconnection()
+        }
     }
 
     override fun onRequestPermissionsResult(
@@ -58,6 +62,14 @@ class MainActivity : AppCompatActivity() {
                 ).show()
             }
         }
+    }
+
+    private fun disconnection() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+
+        // ferme l'activité actuelle pour empêcher retour avec bouton back
+        finish()
     }
 
     private fun startAnalysis() {
